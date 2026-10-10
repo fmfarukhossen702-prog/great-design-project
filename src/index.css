@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme{
+  --color-bgPrimary: #292929;
+  --color-borderPrimary: #b4afa128;
+  --color-btnPrimary: #B66449;
+  --color-textPrimary: #E2DCC8;
+}
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.slick-dots-right {
+  position: fixed;
+  top: 50vh;
+  right: 30px;
+  bottom: auto;
+  left: auto;
+  display: flex !important;
+  width: auto;
+  flex-direction: column;
+  gap: 0.75rem;
+  transform: translateY(-50%);
+}
+
+.slick-dots-right li {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0;
+}
+
+.slick-dots-right li button {
+  width: 0.75rem;
+  height: 0.75rem;
+  padding: 0;
+}
+
+.slick-dots-right li button::before {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: white;
+  color: transparent;
+  content: "";
+  opacity: 1;
+}
+
+.slick-dots-right li.slick-active button::before {
+  background-color: #b66449;
+  opacity: 1;
+}
+
+.project-active-ring::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 9999px;
+  padding: 5px;
+  background: conic-gradient(
+    transparent 0deg 315deg,
+    #ef4444 315deg 360deg
+  );
+  content: "";
+  pointer-events: none;
+  animation: project-ring-spin 1.5s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+@keyframes project-ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
