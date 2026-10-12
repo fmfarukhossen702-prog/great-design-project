@@ -42,15 +42,15 @@ const Awwards = () => {
 
         <div className="min-w-0 flex-1 flex ">
           {/* left  */}
-          <div className=" w-[27%] border-r-2 self-stretch border-r-borderPrimary pt-6 px-10 text-textPrimary! ">
-            <div className=" uppercase text-7xl flex justify-between  ">
+          <div className=" w-[27%] border-r-2 self-stretch border-r-borderPrimary pt-6 px-5 text-textPrimary! ">
+            <div className=" uppercase text-6xl flex justify-between  ">
               <h1>Explore</h1>
               <h1>my</h1>
             </div>
             <p className=" text-[15px] leading-2 ">
               I love my work and every project is my pride{" "}
             </p>
-            <h1 className=" text-7xl text-center pb-12 pl-5 leading-20 uppercase ">
+            <h1 className=" text-6xl text-center pb-12 pl-5 leading-20 uppercase ">
               profile
             </h1>
             <p className=" text-[15px] w-90 ">

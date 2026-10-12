@@ -2,7 +2,6 @@ import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 // import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router";
-import { pageActiveReducer } from "../redux/dataStore";
 
 const Navbar = () => {
   //   const dispatch = useDispatch();

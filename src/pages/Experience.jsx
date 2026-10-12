@@ -1,4 +1,3 @@
-import React from "react";
 import bg from "../assets/Experience.png";
 import CardExperience from "../component/CardExperience";
 import { BsFacebook } from "react-icons/bs";

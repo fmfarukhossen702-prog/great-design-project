@@ -1,5 +1,3 @@
-import React from "react";
-
 const CardExperience = ({ icon, date, title, description, image,classNameLi=" " }) => {
   return (
     <ul className="">

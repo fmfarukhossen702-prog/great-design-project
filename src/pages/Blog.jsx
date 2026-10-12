@@ -90,7 +90,7 @@ const Blog = () => {
               <p className=" text-sm w-94.25   ">
                 Berling ® — minimalism photography agency website. with the help
                 of a minimalistic design, the site turned out to be very
-                user-friendly and responsive, and the brand became more.
+                user-friendly and responsive, and the brand became more.
               </p>
       
      

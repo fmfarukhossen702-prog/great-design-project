@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import bg from "../assets/background.png";
 import { GoArrowUpRight } from "react-icons/go";
-import Btn from "../component/Btn";
 import { FiArrowRight } from "react-icons/fi";
 
 
@@ -17,10 +16,9 @@ const Contact = () => {
 
   const handleClick = (e) => {
     e.preventDefault()
-   if (regex.test(email)) {
-     setEmailText("successfully");
-   }
-
+    setEmailText(
+      regex.test(email) ? "Successfully" : "Please enter a valid email address.",
+    );
   }
 
   const sideVarData = [
@@ -114,7 +112,7 @@ const Contact = () => {
                   project. <span>Brief</span>{" "}
                 </p>
               </div>
-              <form className=" col-span-1">
+              <form className=" col-span-1" onSubmit={handleClick}>
                 <input
                   type="text"
                   name=""
