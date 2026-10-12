@@ -141,7 +141,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className=" bg-btnPrimary px-8 py-5  rounded-4xl  mt-15 "
+                  className=" bg-btnPrimary px-8 py-5 block  rounded-4xl  mt-15 "
                 >
                   <FiArrowRight className=" text-xl  " />
                 </button>
