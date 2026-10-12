@@ -133,11 +133,7 @@ const Testimonials = () => {
               </h2>
 
               <div className="flex flex-1 items-center">
-                <Slider
-                  ref={sliderRef}
-                  {...settings}
-                  className="w-full"
-                >
+                <Slider ref={sliderRef} {...settings} className="w-full">
                   {testimonials.map((testimonial) => (
                     <div key={testimonial.name}>
                       <div className="grid grid-cols-[100px_minmax(0,320px)] items-start justify-center gap-12 px-8">
@@ -146,9 +142,7 @@ const Testimonials = () => {
                           <p className="text-[14px] leading-5">
                             “{testimonial.quote}”
                           </p>
-                          <h3 className="mt-9 text-lg">
-                            {testimonial.name}
-                          </h3>
+                          <h3 className="mt-9 text-lg">{testimonial.name}</h3>
                           <p className="mt-1 text-sm text-textPrimary/75">
                             {testimonial.project}
                           </p>
@@ -164,7 +158,7 @@ const Testimonials = () => {
                   type="button"
                   aria-label="Previous testimonial"
                   onClick={() => sliderRef.current?.slickPrev()}
-                  className="flex h-13 w-20 cursor-pointer items-center justify-center rounded-full border border-textPrimary bg-transparent text-textPrimary"
+                  className="flex h-13 w-20 cursor-pointer items-center justify-center rounded-full border border-textPrimary hover:bg-btnPrimary bg-transparent text-textPrimary"
                 >
                   <FaArrowLeftLong />
                 </button>
@@ -172,7 +166,7 @@ const Testimonials = () => {
                   type="button"
                   aria-label="Next testimonial"
                   onClick={() => sliderRef.current?.slickNext()}
-                  className="flex h-13 w-20 cursor-pointer items-center justify-center rounded-full border-0 bg-btnPrimary text-textPrimary"
+                  className="flex h-13 w-20 cursor-pointer items-center justify-center rounded-full border border-textPrimary hover:bg-btnPrimary bg-transparent text-textPrimary"
                 >
                   <FaArrowRightLong />
                 </button>

@@ -75,6 +75,18 @@ const Navbar = () => {
               <li>
                 {" "}
                 <NavLink
+                  to="/experience"
+                  end
+                  className={({ isActive }) =>
+                    isActive ? " text-btnPrimary " : " "
+                  }
+                >
+                  experience
+                </NavLink>{" "}
+              </li>
+              <li>
+                {" "}
+                <NavLink
                   to="/blog"
                   end
                   className={({ isActive }) =>

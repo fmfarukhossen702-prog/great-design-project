@@ -41,6 +41,7 @@ const Project = () => {
         </div>
 
         <div className="min-w-0 flex-1 flex ">
+          {/* left  */}
           <div className=" w-[27%] border-r-2 self-stretch border-r-borderPrimary ">
             <h1 className=" uppercase font-medium text-4xl mt-7 ml-5.5 ">
               projects
@@ -69,6 +70,7 @@ const Project = () => {
               </Btn>
             </div>
           </div>
+          {/* right  */}
           <div className=" w-[73%]  ">
             <div className=" w-full h-full py-7 pl-7 pr-23">
               {projects.map((item) => {

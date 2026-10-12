@@ -7,8 +7,18 @@
   --color-textPrimary: #E2DCC8;
 }
 
+:root {
+  font-family: "Segoe UI", sans-serif;
+  color: #e2dcc8;
+  background: #292929;
+}
+
 html,
 body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: #292929;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -17,6 +27,12 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+
+#root {
+  min-height: 100vh;
+}
+
+
 
 .slick-dots-right {
   position: fixed;
